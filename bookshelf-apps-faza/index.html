@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf Apps</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="head_bar">
+    <h1>Bookshelf Apps</h1>
+  </header>
+
+  <main>
+    <section class="input_section">
+      <h2>Masukkan Buku Baru</h2>
+      <form id="input-Book">
+        <div class="input">
+          <label for="inputJudulBuku">Judul</label>
+          <input id="inputJudulBuku" class="input" type="text" placeholder="Masukkan judul buku" name="judulBook">
+        </div>
+        <div class="input">
+          <label for="inputPenulisBuku">Penulis</label>
+          <input id="inputPenulisBuku" class="input" type="text" placeholder="Masukkan penulis buku" name="penulisBook">
+        </div>
+        <div class="input">
+          <label for="inputTahunBuku">Tahun</label>
+          <input id="inputTahunBuku" class="input" type="number" placeholder="Masukkan tahun terbit buku" name="tahunBook">
+        </div>
+        <div class="input_inline">
+          <label for="inputBukuSelesai">Selesai dibaca</label>
+          <input id="inputBukuSelesai"class="input" type="checkbox" name="selesai">
+        </div>
+        <button  value="Submit" class="tbl-submit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+      </form>
+    </section>
+    
+    <section class="search_section">
+      <h2>Cari Buku</h2>
+      <form id="search-Book">
+        <label for="searchBookTitle">Judul</label>
+        <input id="searchBookTitle" type="text" placeholder="Masukkan judul buku yang dicari">
+        <button class="tbl-submit" type="submit">Cari</button>
+      </form>
+    </section>
+    
+    <section id="tempat-buku">
+      <section class="book_shelf">
+        <h2>Buku belum selesai dibaca</h2>
+        
+        <div id="incompleteBookshelfList" class="book_list">
+        </div>
+      </section>
+      
+      <section class="book_shelf">
+        <h2>Buku selesai dibaca</h2>
+        
+        <div id="completeBookshelfList" class="book_list">
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+        <p>Belajar Membuat Bookshelf - <a href="https://github.com/fazadinanm/">Faza Dinan Muhammad</a></p>
+    </div>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/event.js"></script>
+</body>
+  
+</html>
